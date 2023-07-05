@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="activity6DataSet" targetNamespace="http://tempuri.org/activity6DataSet.xsd" xmlns:mstns="http://tempuri.org/activity6DataSet.xsd" xmlns="http://tempuri.org/activity6DataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="activity6ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="activity6ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Disconnected_Environment.Properties.Settings.GlobalReference.Default.activity6ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ProdiTableAdapter" GeneratorDataComponentClassName="ProdiTableAdapter" Name="Prodi" UserDataComponentName="ProdiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="activity6ConnectionString (Settings)" DbObjectName="activity6.dbo.Prodi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nama_prodi FROM dbo.Prodi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nama_prodi" DataSetColumn="nama_prodi" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="activity6DataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="activity6DataSet" msprop:Generator_DataSetName="activity6DataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Prodi" msprop:Generator_RowEvHandlerName="ProdiRowChangeEventHandler" msprop:Generator_RowDeletedName="ProdiRowDeleted" msprop:Generator_RowDeletingName="ProdiRowDeleting" msprop:Generator_RowEvArgName="ProdiRowChangeEvent" msprop:Generator_TablePropName="Prodi" msprop:Generator_RowChangedName="ProdiRowChanged" msprop:Generator_RowChangingName="ProdiRowChanging" msprop:Generator_TableClassName="ProdiDataTable" msprop:Generator_RowClassName="ProdiRow" msprop:Generator_TableVarName="tableProdi" msprop:Generator_UserTableName="Prodi">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nama_prodi" msprop:Generator_ColumnPropNameInRow="nama_prodi" msprop:Generator_ColumnPropNameInTable="nama_prodiColumn" msprop:Generator_ColumnVarNameInTable="columnnama_prodi" msprop:Generator_UserColumnName="nama_prodi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
