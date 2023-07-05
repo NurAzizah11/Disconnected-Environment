@@ -1,6 +1,6 @@
 ﻿namespace Disconnected_Environment
 {
-    partial class Form2
+    partial class FormDataProdi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,137 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nmp = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.activity6DataSet = new Disconnected_Environment.activity6DataSet();
-            this.prodiBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.prodiTableAdapter = new Disconnected_Environment.activity6DataSetTableAdapters.ProdiTableAdapter();
-            this.namaprodiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.activity6DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiBindingSource)).BeginInit();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.npm = new System.Windows.Forms.Label();
+            this.btnOpen = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGridView2
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.namaprodiDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.prodiBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(66, 44);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(380, 205);
-            this.dataGridView1.TabIndex = 0;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(25, 28);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(383, 198);
+            this.dataGridView2.TabIndex = 0;
             // 
-            // label1
+            // npm
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(91, 279);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 16);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nama Prodi";
+            this.npm.AutoSize = true;
+            this.npm.Location = new System.Drawing.Point(42, 242);
+            this.npm.Name = "npm";
+            this.npm.Size = new System.Drawing.Size(62, 13);
+            this.npm.TabIndex = 1;
+            this.npm.Text = "Nama Prodi";
             // 
-            // nmp
+            // btnOpen
             // 
-            this.nmp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nmp.Location = new System.Drawing.Point(176, 279);
-            this.nmp.Name = "nmp";
-            this.nmp.Size = new System.Drawing.Size(156, 20);
-            this.nmp.TabIndex = 2;
+            this.btnOpen.Location = new System.Drawing.Point(437, 28);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(63, 34);
+            this.btnOpen.TabIndex = 2;
+            this.btnOpen.Text = "Open";
+            this.btnOpen.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(470, 44);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 35);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Open";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSave.Location = new System.Drawing.Point(103, 280);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(64, 32);
+            this.btnSave.TabIndex = 3;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnClear
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(359, 272);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 33);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnClear.Location = new System.Drawing.Point(189, 280);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(62, 32);
+            this.btnClear.TabIndex = 4;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // textBox1
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(176, 317);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(61, 33);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.textBox1.Location = new System.Drawing.Point(103, 242);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(170, 20);
+            this.textBox1.TabIndex = 5;
             // 
-            // button4
+            // btnAdd
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(254, 317);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(63, 33);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Clear";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnAdd.Location = new System.Drawing.Point(304, 235);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(55, 32);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
-            // activity6DataSet
+            // FormDataProdi
             // 
-            this.activity6DataSet.DataSetName = "activity6DataSet";
-            this.activity6DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // prodiBindingSource
-            // 
-            this.prodiBindingSource.DataMember = "Prodi";
-            this.prodiBindingSource.DataSource = this.activity6DataSet;
-            // 
-            // prodiTableAdapter
-            // 
-            this.prodiTableAdapter.ClearBeforeFill = true;
-            // 
-            // namaprodiDataGridViewTextBoxColumn
-            // 
-            this.namaprodiDataGridViewTextBoxColumn.DataPropertyName = "nama_prodi";
-            this.namaprodiDataGridViewTextBoxColumn.HeaderText = "nama_prodi";
-            this.namaprodiDataGridViewTextBoxColumn.Name = "namaprodiDataGridViewTextBoxColumn";
-            // 
-            // Form2
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.nmp);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Name = "Form2";
-            this.Text = "Data Prodi";
-            this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.activity6DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiBindingSource)).EndInit();
+            this.ClientSize = new System.Drawing.Size(592, 356);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.npm);
+            this.Controls.Add(this.dataGridView2);
+            this.Name = "FormDataProdi";
+            this.Load += new System.EventHandler(this.FormDataProdi_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +129,12 @@
         private System.Windows.Forms.BindingSource prodiBindingSource;
         private activity6DataSetTableAdapters.ProdiTableAdapter prodiTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn namaprodiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label npm;
+        private System.Windows.Forms.Button btnOpen;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
